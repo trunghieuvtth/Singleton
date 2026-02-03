@@ -1,0 +1,16 @@
+public enum AppConfig {
+    INSTANCE;
+    private String appName = "Singleton Demo";
+    private int timeout = 5000;
+
+    public String getAppName() {
+        return appName;
+    }
+
+    public int getTimeout() {
+        return timeout;
+    }
+    public void setTimeout(int timeout) {
+        this.timeout = timeout;
+    }
+}
